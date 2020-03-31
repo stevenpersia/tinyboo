@@ -1,0 +1,41 @@
+{
+  "name": "tinyboo",
+  "version": "1.0.1",
+  "description": "Utilities library for type checking and other useful things. Already more than 35 functions. Each function returns false or true, that's it. Perfect for front and back ends.",
+  "homepage": "https://github.com/stevenpersia/tinyboo",
+  "repository": "stevenpersia/tinyboo",
+  "main": "src/index.ts",
+  "author": "Steven Persia",
+  "license": "MIT",
+  "keywords": [
+    "utils",
+    "javascript",
+    "typescript",
+    "lib",
+    "library",
+    "typechecker",
+    "empty",
+    "primitive",
+    "boolean",
+    "type",
+    "equal",
+    "contains"
+  ],
+  "scripts": {
+    "lint": "eslint ./src/index.ts --fix",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-typescript": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "^2.26.0",
+    "@typescript-eslint/parser": "^2.26.0",
+    "babel-jest": "^25.2.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.2.4",
+    "typescript": "^3.8.3"
+  }
+}
