@@ -1,18 +1,16 @@
-<div style="text-align:center"><img src="https://raw.githubusercontent.com/stevenpersia/tinyboo/master/logo.png" alt="tinyboo" /></div>
+<h1 align="center"><img src="https://raw.githubusercontent.com/stevenpersia/tinyboo/master/logo.png" alt="tinyboo" /></h1>
 
 ## Overview
 
 Utilities library for type checking and **other useful things**. Already more than **35 functions**. Each function returns **false** or **true**, that's it. Perfect for front and back ends. 👻
 
-<ul style="list-style-type: none; padding: 0;">
-<li>🌱 <b>0 dependencies</b></li>
-<li>⚡ <b>Super lightweight (~45 kB)</b></li>
-<li>🤘 <b>Easy to use</b></li>
-<li>🛠 <b>Tested</b></li>
-<li>🌞 <b>TypeScript supported</b></li>
-</ul>
+- **0 dependencies** 🌱
+- **Super lightweight (~45 kB)** ⚡
+- **Easy to use** 🤘
+- **Tested** 🛠
+- **TypeScript supported** 🌞
 
-Roadmap : `isUrl`, `isAbsoluteUrl`, `isRelativeUrl`, `isGif`, `isJpg`, `isPng`, `isPdf`, `isSvg`, `isWebp`, `isHtml`, `isZip`, `isRar`, `isEmptyObject`, `isMatch`, `isJson`, `hasKey`, `hasValue`, ...
+**Roadmap** : `isUrl`, `isAbsoluteUrl`, `isRelativeUrl`, `isGif`, `isJpg`, `isPng`, `isPdf`, `isSvg`, `isWebp`, `isHtml`, `isZip`, `isRar`, `isEmptyObject`, `isMatch`, `isJson`, `hasKey`, `hasValue`, ...
 
 ## Installation
 
