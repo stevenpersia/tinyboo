@@ -5,7 +5,7 @@
 Utilities library for type checking and **other useful things**. Already more than **35 functions**. Each function returns **false** or **true**, that's it. Perfect for front and back ends. 👻
 
 - **0 dependencies** 🌱
-- **Super lightweight (~15 kB)** ⚡
+- **Super lightweight (~25 kB)** ⚡
 - **Easy to use** 🤘
 - **Tested** 🛠
 - **TypeScript supported** 🌞
