@@ -4,7 +4,8 @@
   "description": "Utilities library for type checking and other useful things. Already more than 35 functions. Each function returns false or true, that's it. Perfect for front and back ends.",
   "homepage": "https://github.com/stevenpersia/tinyboo",
   "repository": "stevenpersia/tinyboo",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Steven Persia",
   "license": "MIT",
   "keywords": [
