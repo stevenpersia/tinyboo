@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "declaration": true,
     "outDir": "./dist",
     "lib": ["ES2015", "ES2016"],
     "sourceMap": true,
