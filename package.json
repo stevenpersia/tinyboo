@@ -1,6 +1,6 @@
 {
   "name": "tinyboo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utilities library for type checking and other useful things. Already more than 35 functions. Each function returns false or true, that's it. Perfect for front and back ends.",
   "homepage": "https://github.com/stevenpersia/tinyboo",
   "repository": "stevenpersia/tinyboo",
