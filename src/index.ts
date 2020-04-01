@@ -24,7 +24,7 @@ export const isArray = (value: any): value is any[] => {
  * @param value any
  * @returns `true` || `false`
  */
-export const isBlob = (value: any): value is Blob => {
+export const isBlob = (value: any) => {
   return getType(value) === 'Blob';
 };
 
@@ -64,7 +64,7 @@ export const isError = (value: any): value is Error => {
  * @param value any
  * @returns `true` || `false`
  */
-export const isFile = (value: any): value is File => {
+export const isFile = (value: any) => {
   return getType(value) === 'File';
 };
 
