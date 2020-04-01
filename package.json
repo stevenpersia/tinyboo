@@ -6,6 +6,9 @@
   "repository": "stevenpersia/tinyboo",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "author": "Steven Persia",
   "license": "MIT",
   "keywords": [
