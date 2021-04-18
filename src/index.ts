@@ -387,3 +387,13 @@ export const isLessThan = (value: number, value2: number) => {
   if (isNumber(value) && isNumber(value2)) return value < value2;
   return false;
 };
+
+/**
+ * Returns true if `value` is an empty object.
+ *
+ * @param value any
+ * @returns `true` || `false`
+ */
+export const isEmptyObject = (value: any): value is { [key: string]: any } => {
+  return getType(value) === 'Object' && Object.entries(value).length === 0;
+};
