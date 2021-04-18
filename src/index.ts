@@ -381,6 +381,7 @@ export const isIP = (value: string) => {
  * Returns true if `value` is less than `value2`.
  *
  * @param value number
+ * @param value2 number
  * @returns `true` || `false`
  */
 export const isLessThan = (value: number, value2: number) => {
@@ -394,7 +395,7 @@ export const isLessThan = (value: number, value2: number) => {
  * @param value any
  * @returns `true` || `false`
  */
-export const isEmptyObject = (value: any): value is { [key: string]: any } => {
+export const isEmptyObject = (value: any) => {
   return getType(value) === 'Object' && Object.entries(value).length === 0;
 };
 
@@ -411,4 +412,15 @@ export const isJSON = (value: string) => {
   } catch (e) {
     return false;
   }
+};
+
+/**
+ * Returns true if `value2` key is in `value` object.
+ *
+ * @param value any
+ * @param value2 string
+ * @returns `true` || `false`
+ */
+export const hasKey = (value: any, value2: string) => {
+  return isObject(value) && value2 in value;
 };
