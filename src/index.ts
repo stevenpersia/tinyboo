@@ -435,3 +435,16 @@ export const hasKey = (value: any, value2: string) => {
 export const hasValue = (value: any, value2: string) => {
   return isObject(value) && Object.keys(value).some((v) => value[v] === value2);
 };
+
+/**
+ * Returns true if `value` is smaller than `max` and greater than `min`.
+ *
+ * @param value number
+ * @param min number
+ * @param max number
+ * @returns `true` || `false`
+ */
+export const isBetween = (value: number, min: number, max: number) => {
+  if (!isNumber(value) || !isNumber(min) || !isNumber(max)) return false;
+  return value >= min && value <= max;
+};
