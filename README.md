@@ -2,7 +2,7 @@
 
 ## Overview
 
-Utilities library for type checking and **other useful things**. Already more than **35 functions**. Each function returns **false** or **true**, that's it. Perfect for front and back ends. 👻
+Utilities library for type checking and **other useful things**. Already more than **40 functions**. Each function returns **false** or **true**, that's it. Perfect for front and back ends. 👻
 
 - **0 dependencies** 🌱
 - **Super lightweight (~25 kB)** ⚡
@@ -10,7 +10,7 @@ Utilities library for type checking and **other useful things**. Already more th
 - **Tested** 🛠
 - **TypeScript supported** 🌞
 
-**Roadmap** : `isUrl`, `isAbsoluteUrl`, `isRelativeUrl`, `isGif`, `isJpg`, `isPng`, `isPdf`, `isSvg`, `isWebp`, `isHtml`, `isZip`, `isRar`, `isEmptyObject`, `isMatch`, `isJson`, `hasKey`, `hasValue`, ...
+**Roadmap** : `isUrl`, `isAbsoluteUrl`, `isRelativeUrl`, `isGif`, `isJpg`, `isPng`, `isPdf`, `isSvg`, `isWebp`, `isHtml`, `isZip`, `isRar`, `isMatch`, ...
 
 ## Installation
 
@@ -67,6 +67,12 @@ isArrayOfPrimitives(['foo', 1]); // → true
 isArrayOfStrings(['bar', '1']); // → true
 ```
 
+### Objects
+```js
+hasKey({ foo: 'bar' }, 'foo'); // → true
+hasValue({ foo: 'bar' }, 'bar'); // → true
+```
+
 ### Numbers
 
 ```js
@@ -74,16 +80,19 @@ isFiniteNumber(2); // → true
 isGreaterThan(700, 500); // → true
 isInteger(21); // → true
 isLessThan(300, 500); // → true
+isBetween(2, 1, 3); // → true
 ```
 
 ### Others
 
 ```js
 isEmptyArray([]); // → true
+isEmptyObject({}); // → true
 isEmptyString(' '); // → true
 isEqual('foo', 'foo'); // → true
 isHexadecimal('F1F1F1'); // → true
 isIP('210.23.51.230'); // → true
+isJSON('{ "foo": "bar" }'); // → true
 ```
 
 ## More examples
@@ -122,6 +131,19 @@ isIP('255.255.255.255'); // → true
 isIP('192.168'); // → false
 isIP(19216801); // → false
 isIP('127.000.000.000'); // → false
+```
+
+### `isJSON` - only works with string or null
+
+```js
+isJSON('{}'); // → true
+isJSON('null'); // → true
+isJSON('{ "foo": "bar" }'); // → true
+isJSON(null); // → true
+
+isJSON({}); // → false
+isJSON({ foo: 'bar' }); // → false
+isJSON(''); // → false
 ```
 
 ## Star, Fork, Clone & Contribute
