@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "outDir": "./dist",
-    "lib": ["ES2015", "ES2016"],
+    "lib": ["ES2015", "ES2016", "ES2017"],
     "sourceMap": true,
     "noImplicitAny": true,
     "target": "es5",
