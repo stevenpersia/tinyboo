@@ -424,3 +424,14 @@ export const isJSON = (value: string) => {
 export const hasKey = (value: any, value2: string) => {
   return isObject(value) && value2 in value;
 };
+
+/**
+ * Returns true if `value2` value is in `value` object.
+ *
+ * @param value any
+ * @param value2 string
+ * @returns `true` || `false`
+ */
+export const hasValue = (value: any, value2: string) => {
+  return isObject(value) && Object.keys(value).some((v) => value[v] === value2);
+};
