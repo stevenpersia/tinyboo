@@ -397,3 +397,18 @@ export const isLessThan = (value: number, value2: number) => {
 export const isEmptyObject = (value: any): value is { [key: string]: any } => {
   return getType(value) === 'Object' && Object.entries(value).length === 0;
 };
+
+/**
+ * Returns true if `value` is a valid JSON.
+ *
+ * @param value string
+ * @returns `true` || `false`
+ */
+export const isJSON = (value: string) => {
+  try {
+    const json = JSON.parse(value);
+    return (json || json === null) && typeof json === 'object';
+  } catch (e) {
+    return false;
+  }
+};
